@@ -1,0 +1,14 @@
+
+# Importing the NumPy library
+import numpy as np
+
+# Creating a 3x3 array and reshaping it
+a = np.arange(9).reshape((3,3))
+
+# Displaying the original flattened array
+print("Original flattened array:")
+print(a)
+weight =np.array([1./4, 2./4, 2./4])
+# Calculating the weighted average along the specified axis (axis=1) of the above flattened array using specified weights
+print("Weighted average along the specified axis of the above flattened array:")
+print(np.average(a, axis=1, weights=weight)) 
